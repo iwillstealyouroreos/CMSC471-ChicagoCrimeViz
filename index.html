@@ -12,7 +12,63 @@
 <body>
     <div class="container">
         <h1>Chicago Crime Data Visualization</h1>
-        
+
+        <h5>
+            For this assignment, I used the Chicago crime dataset from the City of Chicago's data portal. 
+            This dataset contains detailed information about reported incidents of crime from 2001 to today. 
+            My focus was on the rise and changes in crime from 2018 to 2022 to understand how the pandemic may 
+            have impacted crime patterns.
+        </h5>
+
+        <h5>
+            I focused on four key variables: 
+            <ul>
+                <li>The year the crime was reported (Year)</li>
+                <li>The type of crime (Type)</li>
+                <li>The district or location of the crime (District)</li>
+                <li>Whether an arrest was made (Arrest)</li>
+            </ul>
+            These variables were used in dynamic filters for the year and district, as well as in tooltips.
+        </h5>
+
+        <h5>
+            My goal was to explore how crime types evolved during the pandemic. I chose to use a TreeMap to visualize 
+            the magnitude of crime reported. I also removed crime entries below a reasonable threshold to avoid overcrowding 
+            and ensure meaningful insights. While I initially considered using geolocation data to create density or heatmaps, 
+            I eventually focused on TreeMap visualization, which aligned better with my objectives.
+        </h5>
+
+        <h5>
+            I also wanted to analyze crime data across different districts. This allows for comparison of crime patterns 
+            in various areas and better insights into local trends.
+        </h5>
+
+        <h5>
+            For the TreeMap implementation, I used the Chicago Crimes dataset along with techniques from 
+            <a href="https://d3-graph-gallery.com/graph/treemap_basic.html" target="_blank">d3-graph-gallery</a>. 
+            I also utilized transitions and initialization functions provided during class and lab.
+        </h5>
+
+        <h5>
+            This project was completed individually, as most of my peers had already paired up. It was a challenging 
+            experience, but I gained valuable insights. The data cleaning process took a significant amount of time 
+            due to inconsistencies and missing data. Initially, I wanted to create spike maps using the geolocation data, 
+            but it was poorly documented. After selecting the TreeMap visualization, I followed a helpful tutorial 
+            and completed the implementation in 1-2 days.
+        </h5>
+
+        <h5>
+            Overall, the project was a great learning experience. I had a lot of fun, but I would definitely 
+            prefer working in a team for the next project to collaborate more effectively.
+        </h5>
+
+        <h5>
+            AI Usage: I used CoPilot to assist with data cleaning strategies and guidance on adding the dyamic 
+            filterization.
+
+        </h5>
+        </h1>
+        <h5> Demo: <a href="https://www.youtube.com/watch?v=aSBx5Kxgci8" target="_blank"> Short Visualization Demo</a></h5>
         <!-- Dropdown for district filter -->
         <div style="margin-bottom: 20px;">
             <label for="districtSelect">Filter by District:</label>
