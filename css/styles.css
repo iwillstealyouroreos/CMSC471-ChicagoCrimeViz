@@ -1,0 +1,65 @@
+/* Reset default styles */
+* {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0px auto;
+    line-height: 1.8;
+}
+
+/* Container styling for layout */
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    font-family: Arial, sans-serif;
+}
+
+.x-axis path,
+.y-axis path,
+.x-axis line,
+.y-axis line {
+    stroke: #333;
+    shape-rendering: crispEdges;
+}
+
+.x-axis text,
+.y-axis text {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+}
+button {
+    padding: 8px 16px;
+    margin-right: 10px;
+}
+
+.axis-label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    pointer-events: none;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Soth fade effect */
+}
+
+#vis svg {
+    
+}
+
+#slider {
+    width: 80%;
+    margin: 20px auto;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}

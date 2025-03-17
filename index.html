@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicago Crime Data Visualization</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://d3js.org/d3.v7.js"></script>
+    <script src="https://unpkg.com/d3-simple-slider"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Chicago Crime Data Visualization</h1>
+        
+        <!-- Dropdown for district filter -->
+        <div style="margin-bottom: 20px;">
+            <label for="districtSelect">Filter by District:</label>
+            <select id="districtSelect">
+                <option value="ALL">All Districts</option>
+                <!-- District options will be populated dynamically -->
+            </select>
+        </div>
+
+        <!-- Place the slider at the top -->
+        <div id="slider" style="margin-bottom: 20px;"></div>
+        
+        <div id="vis"></div>   
+        <script src="./js/script.js"></script>
+    </div>
+</body>
+</html>
